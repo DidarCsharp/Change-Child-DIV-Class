@@ -1,0 +1,17 @@
+//----HTML--------//
+<div class="form-group" id="DivIsAuthor">
+ <label for="Website">Is Author?</label>
+ <br>                                    
+ <div class="toggle btn btn-success" data-toggle="toggle" style="width: 58px; height: 34px;">
+ <input type="checkbox" data-toggle="toggle" data-on="Yes" data-off="No" data-onstyle="success" data-offstyle="danger" id="chkhispublisher">
+ <div class="toggle-group"><label class="btn btn-success toggle-on">Yes</label>
+<label class="btn btn-danger active toggle-off">No</label><span class="toggle-handle btn btn-default"></span>
+</div>
+</div>
+</div>
+//------END  HTML -----//
+
+//------jQuery ------//
+ $('#DivIsAuthor > .toggle').removeClass('btn btn-danger off');
+ $('#DivIsAuthor > .toggle').addClass('btn btn-success');
+//------End jQuery ------//
